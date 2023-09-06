@@ -38,7 +38,7 @@ bool deserializeConfig(JsonObject doc, bool fromFS) {
   JsonObject nw = doc["nw"];
 #ifndef WLED_DISABLE_ESPNOW
   CJSON(enableESPNow, nw[F("espnow")]);
-  getStringFromJson(linked_remote, nw[F("linekd_remote")], 13);
+  getStringFromJson(linked_remote, nw[F("linked_remote")], 13);
   linked_remote[12] = '\0';
 #endif
 
