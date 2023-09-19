@@ -11,6 +11,12 @@
  */
 //#include "../usermods/EXAMPLE_v2/usermod_v2_example.h"
 
+//registerUsermod(new StairwayWipeUsermod())
+
+#ifdef USERMOD_STAIRWAY
+  #include "../usermods/Battery/stairway_wipe-usermod-v2.h"
+#endif
+
 #ifdef USERMOD_BATTERY
   #include "../usermods/Battery/usermod_v2_Battery.h"
 #endif

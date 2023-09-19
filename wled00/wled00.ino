@@ -11,6 +11,7 @@
  * New usermods should use usermod.cpp instead.
  */
 #include "wled.h"
+#include "stairway-wipe-usermod-v2.h"
 
 void setup() {
   WLED::instance().setup();
